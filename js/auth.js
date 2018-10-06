@@ -1,15 +1,17 @@
 var login = function() {
-    var name = document.getElementById("name");
-    var pwd = document.getElementById("pwd");
+    var email = document.getElementById("name");
+    var password = document.getElementById("pwd");
 
     
-    firebase.auth().createUserWithEmailAndPassword(name.value, pwd.value).catch(function(error) {
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
         alert(errorMessage);
         // ...
     });
+
+    window.location.href = "./index.html";
 }
 
 var register = function(username,password) {
@@ -21,4 +23,6 @@ var register = function(username,password) {
         alert(errorMessage);
         // ...
     });
+
+
 }
