@@ -3,15 +3,32 @@ body {
 }
 
 .page {
-    height: 800px;
-}
-
-.updiv {
     height: 550px;
 }
 
+.updiv {
+    height: 450px;
+}
+
 .downdiv {
-    height: 200px;
+    height: 100px;
+}
+
+.dropSlide {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+
+.dragSlide {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    float: left;
+    width: 20%;
+    height: 100%;
 }
 
 #div1 {
