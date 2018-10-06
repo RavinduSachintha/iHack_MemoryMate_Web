@@ -33,4 +33,4 @@ var register = function(username,password) {
         // ...
     });
 }
-
+// Function to register the user end
