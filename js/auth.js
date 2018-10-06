@@ -20,8 +20,11 @@ var login = function() {
 
 // Function to register the user start
 var register = function(username,password) {
-    
-    firebase.auth().createUserWithEmailAndPassword(username,password).catch(function(error) {
+
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
+
+    firebase.auth().createUserWithEmailAndPassword(email.value,password.value).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
@@ -32,6 +35,7 @@ var register = function(username,password) {
 
 }
 // Function to register the user end
+
 
 // var isSigned = function() {
 //     firebase.auth().onAuthStateChanged(function(user) {
