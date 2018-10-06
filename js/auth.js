@@ -1,13 +1,15 @@
 var login = function() {
-    var name = document.getElementById("name");
-    var pwd = document.getElementById("pwd");
-
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
     
-    firebase.auth().createUserWithEmailAndPassword(name.value, pwd.value).catch(function(error) {
+    firebase.auth().signInWithEmailAndPassword(email.value, password.value).then(function() {
+        alert("Success login");
+        window.location.href = "./index.html";
+
+    }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
-        alert(errorMessage);
         // ...
     });
 }
@@ -21,4 +23,6 @@ var register = function(username,password) {
         alert(errorMessage);
         // ...
     });
+
+
 }
