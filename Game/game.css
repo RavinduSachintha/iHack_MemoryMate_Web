@@ -3,8 +3,15 @@ body {
 }
 
 .page {
-    height: 840px;
-    background-color: lightblue;
+    height: 800px;
+}
+
+.updiv {
+    height: 550px;
+}
+
+.downdiv {
+    height: 200px;
 }
 
 #div1 {
@@ -17,4 +24,8 @@ body {
     width: 10px;
     height: 10px;
     background-color: blue;
+}
+
+.brd {
+    border: 1px solid black;
 }
