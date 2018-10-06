@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+input{
+    border-radius: 20px;
+}
+
+
+
 body {
     font-family: 'Montserrat';
     line-height: 1.5;
