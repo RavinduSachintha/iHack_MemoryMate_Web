@@ -1,4 +1,5 @@
 var login = function() {
+
     var email = document.getElementById("email");
     var password = document.getElementById("password");
     
@@ -23,6 +24,7 @@ var register = function(username,password) {
         alert(errorMessage);
         // ...
     });
+
 
 
 }
