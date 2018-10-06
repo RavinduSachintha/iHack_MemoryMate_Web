@@ -1,11 +1,13 @@
+// Function to authenticate the user credentials start
 var login = function() {
 
     var email = document.getElementById("email");
     var password = document.getElementById("password");
     
     firebase.auth().signInWithEmailAndPassword(email.value, password.value).then(function() {
-        alert("Success login");
-        window.location.href = "./index.html";
+
+        // redirect to app page
+        window.location.href = "./pages/app.html";
 
     }).catch(function(error) {
         // Handle Errors here.
@@ -14,7 +16,10 @@ var login = function() {
         // ...
     });
 }
+// Function to authenticate the user credentials end
 
+
+// Function to register the user start
 var register = function(username,password) {
     
     firebase.auth().createUserWithEmailAndPassword(username,password).catch(function(error) {
@@ -24,7 +29,4 @@ var register = function(username,password) {
         alert(errorMessage);
         // ...
     });
-
-
-
 }
