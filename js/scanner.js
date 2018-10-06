@@ -1,3 +1,3 @@
-function showScannerActivity() {
+var test = function() {
     Android.scannerStart();
 }

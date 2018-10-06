@@ -11,6 +11,8 @@ for (let i = 0; i < 4; i++) {
     ev[i].classList.remove('d-none');
 }
 
+
+
 // firebase.auth().onAuthStateChanged((user) => {
 //     if (user) {
 //         firebase.database().ref('events/' + user.uid).set({
