@@ -25,3 +25,7 @@ var register = function(username,password) {
         alert(errorMessage);
         // ...
     });
+
+
+}
+
