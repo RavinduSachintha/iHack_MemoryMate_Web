@@ -1,4 +1,3 @@
-
 function addEvent(eventName, description, date, time, privacyType, schedule) {
 
     firebase.auth().onAuthStateChanged((user) => {
