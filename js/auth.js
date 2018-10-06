@@ -1,5 +1,6 @@
 // Function to authenticate the user credentials
 var login = function() {
+
     var email = document.getElementById("email");
     var password = document.getElementById("password");
     
@@ -11,6 +12,7 @@ var login = function() {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
+
         // ...
     });
 }
@@ -28,3 +30,4 @@ var register = function(username,password) {
 
 
 }
+
