@@ -1,10 +1,5 @@
-// Get the Auth service for the default app
-var defaultAuth = firebase.auth();
 
-// Get a reference to the database service
-var database = firebase.database();
-
-function addEvent(userId, eventName, description, date, time, privacyType, schedule) {
+function addEvent(eventName, description, date, time, privacyType, schedule) {
 
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {
