@@ -1,4 +1,4 @@
-// login function define
+// Function to authenticate the user credentials start
 var login = function() {
 
     var email = document.getElementById("email");
@@ -16,8 +16,10 @@ var login = function() {
         // ...
     });
 }
+// Function to authenticate the user credentials end
 
-// register function define
+
+// Function to register the user start
 var register = function(username,password) {
     
     firebase.auth().createUserWithEmailAndPassword(username,password).catch(function(error) {
