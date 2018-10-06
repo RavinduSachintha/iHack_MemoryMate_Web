@@ -21,6 +21,14 @@ ul {
     margin: 0;
 }
 
+submitbutton1{
+    background-color:#5fc7ea;
+}
+
+backbutton{
+    background-color:#e68568 ;
+}
+
 .nav1 {
     position: fixed;
     z-index: 1;
