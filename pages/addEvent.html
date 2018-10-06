@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
 
-    <title>login</title>
+    <title>Add Event</title>
 
     <!--Style Sheets start-->
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
@@ -45,9 +45,6 @@
             </li>
         </ul>
     </nav>
-    <div class="container-fluid bg-dark">
-        hvweafuewf
-    </div>
     <section class="panel b-blue" id="1">
         <article class="panel__wrapper">
             <div class="panel__content">
@@ -58,14 +55,61 @@
 
             
             <div class="card"><!--div containing the card -->
-                        <div class="container">
-                          <p>Enter the time</p> 
+                <div class="col-md-4 login-sec">
+                    <h2 class="text-center">Add New Event</h2>
+                    <!--Form start-->
+                    <form class="login-form">
+                        <div class="form-group">
+
+                            <label  class="text-uppercase">Event Name</label>
+
+                            <input type="text" class="form-control" placeholder="" id="event_name">
+
+
                         </div>
+                        <div class="form-group">
+                            <label  class="text-uppercase">Description</label>
+
+                            <input type="password" class="form-control" placeholder="" id="description">
+
+                        </div>
+                        <div class="form-group">
+                            <label  class="text-uppercase">Date</label>
+
+                            <input type="password" class="form-control" placeholder="" id="date">
+
+                        </div>
+                        <div class="form-group">
+                            <label  class="text-uppercase">Time</label>
+
+                            <input type="password" class="form-control" placeholder="" id="time">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label  class="text-uppercase">Privacy Type</label><br>
+
+                            <input type="radio" name="privacy" value="private"> Private<br>
+                            <input type="radio" name="privacy" value="public"> Public<br>
+                        </div>
+
+                        <div class="form-group">
+                            <label  class="text-uppercase">Schedule</label><br>
+
+                            <input type="radio" name="schedule" value="daily"> Daily<br>
+                            <input type="radio" name="schedule" value="weekly"> Weekly<br>
+                            <input type="radio" name="schedule" value="monthly"> Monthly<br>
+                            <input type="radio" name="schedule" value="once"> Once<br>
+                        </div>
+
+                    </form>
+                    <!--Form end-->
+                </div>
             </div>
         
 
             <div> <!--div containing the buttons -->
-                <button type="button" >Add Event</button>
+                <button type="button" >Add</button>
                 <button type="button" >Reset</button>
                 <button type="button">Back</button>
                 
