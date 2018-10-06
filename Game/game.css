@@ -1,3 +1,12 @@
+body {
+    background-color: lightgreen;
+}
+
+.page {
+    height: 840px;
+    background-color: lightblue;
+}
+
 #div1 {
     width: 50px;
     height: 100px;
