@@ -155,6 +155,16 @@ backbutton{
     justify-content: center;
     overflow: hidden;
 }
+
+.panel2{ /*reduce the height of the panel in timeline*/
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+
+}
 .panel__wrapper {
     padding: 7vh 7vw;
     -webkit-perspective: 1000px;
@@ -254,3 +264,15 @@ backbutton{
     -webkit-transform: rotate(180deg) scale(1.1);
     transform: rotate(180deg) scale(1.1);
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height : 200px;
+    border-radius: 5px;
+}
+
+/*.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}*/

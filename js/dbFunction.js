@@ -52,3 +52,14 @@ function addEventToDatabase(event_name, description, date, time, privacy, schedu
     });
 }
 // Function to pass data to the database end
+
+function getEvents() {
+    alert("dsasd");
+    firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+            firebase.database().ref('events/' + user.uid).once('value', function(snapshot) {
+                console.log(snapshot.val());
+            });
+        }
+    });
+}
