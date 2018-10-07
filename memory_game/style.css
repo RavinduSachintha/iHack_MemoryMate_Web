@@ -53,21 +53,32 @@ h1, h2, h3, h4 {
 
 #cardSlots {
   margin: 50px auto 0 auto;
-  background: #ddf;
+  background:#E64C66;
 }
 
 /* The initial pile of unsorted cards */
 
 #cardPile {
   margin: 0 auto;
-  background: #ffd;
+  background:#299AFB;
+  position: relative;
 }
 
-#cardSlots, #cardPile {
-  width: 910px;
-  height: 120px;
-  padding: 20px;
-  border: 2px solid #333;
+#cardSlots{
+  width: 100px;
+  height: 700px;
+  padding: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+}
+#cardPile{
+  width: 100px;
+  height: 700px;
+  padding: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -79,22 +90,19 @@ h1, h2, h3, h4 {
 /* Individual cards and slots */
 
 #cardSlots div, #cardPile div {
-  float: left;
-  width: 58px;
-  height: 78px;
-  padding: 10px;
-  padding-top: 40px;
-  padding-bottom: 0;
-  border: 2px solid #333;
+  width: 60px;
+  height: 30px;
+  padding:10px;
+  margin-top: 15px;
+  border: 1px solid #333;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  margin: 0 0 0 10px;
   background: #fff;
 }
 
 #cardSlots div:first-child, #cardPile div:first-child {
-  margin-left: 0;
+
 }
 
 #cardSlots div.hovered {
@@ -102,7 +110,7 @@ h1, h2, h3, h4 {
 }
 
 #cardSlots div {
-  border-style: dashed;
+
 }
 
 #cardPile div {
